@@ -21,5 +21,8 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     
     #Check that there is a contact path
     assert_select "a[href=?]", contact_path
+    
+    #Check that there is a signup path
+    assert_select "a[href=?]", signup_path
   end
 end
